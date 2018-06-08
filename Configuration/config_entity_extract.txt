@@ -1,0 +1,104 @@
+{
+	"configuration":{
+		"class":{
+
+				"stages" : [
+					{
+					"name": "Intro",
+					"steps": [
+					{
+						"type":"text",
+						"tag":"Landlord",
+						"regex": "Chunk: {<NNP> <NNP> (<IN> <VBP>)?}"
+					},
+
+					{
+						"type":"text",
+						"tag":"Tenant",
+						"regex": "Chunk: {<NNP> <NNP> (<IN> <VBP>)?}"
+					},
+					{
+
+						"type":"date",
+						"tag":"Date",
+						"regex1":"\\d+/\\d+/\\d+"
+					}
+
+					]
+
+					},
+
+					{
+					"name": "Term",
+					"steps":[
+					{
+						"term_type": "Fixed",
+						"type":"date",
+						"tag":"beginning on",
+						"regex":"\\d+/\\d+/\\d+"
+					},
+
+					{
+						"term_type": "Fixed",
+						"type":"date",
+						"tag":"ending on",
+						"regex":"\\d+/\\d+/\\d+"
+					},
+
+					{
+						"term_type": "Month",
+						"type":"date",
+						"tag":"beginning on",
+						"regex":"\\d+/\\d+/\\d+"
+					}
+					]
+
+
+					},
+
+					{
+					"name": "Rent",
+					"steps":[
+					{
+						"type":"amount",
+						"tag": "Rental amt",
+						"regex":"\\$\\s+\\d+"
+					}
+					]
+
+
+					},
+
+					{
+						"name": "Parties to Contract",
+						"steps": [
+						{
+							"type":"text",
+							"tag": "Broker",
+							"regex": "Chunk: {<NNP> <VBZ> <NNP>}"
+						},
+
+						{
+							"type":"text",
+							"tag": "Purchaser",
+							"regex": "Chunk: {<NNP> <NN> <VBD> <TO> <IN> <NNP>}"
+						},
+
+						{
+							"type":"text",
+							"tag": "Seller",
+							"regex": "Chunk: {<NNP> <NN> <VBD> <TO> <IN> <NNP>}"
+						}
+						]
+
+					}
+
+
+
+
+				]
+
+
+		}
+	}
+}

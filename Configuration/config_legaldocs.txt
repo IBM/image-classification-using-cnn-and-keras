@@ -1,0 +1,49 @@
+{
+	"configuration":{
+		"classification":{
+			"stages":[
+				{
+					"doctype":"Rental",
+					"entities":[
+						{
+							"tag":"Lease Term",
+							"text":"lease term"
+						},
+						
+						{
+							"tag":"Rent",
+							"text":"Rent"
+						},
+						{
+							"tag":"Security Deposit",
+							"text":"Security Deposit"
+						}
+					
+					]
+				},
+				{
+					"doctype":"Purchase",
+					"entities":[
+						{
+							"tag":"PARTIES TO CONTRACT - PROPERTY",
+							"text":"PARTIES TO CONTRACT - PROPERTY"
+						},
+						
+						{
+							"tag":"EARNEST MONEY DEPOSIT",
+							"text":"EARNEST MONEY DEPOSIT"
+						},
+						{
+							"tag":"PURCHASE PRICE",
+							"text":"PURCHASE PRICE"
+						}
+					
+					]
+				}
+				
+			]
+		
+		}
+	
+	}
+}
