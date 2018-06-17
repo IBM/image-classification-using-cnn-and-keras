@@ -143,13 +143,9 @@ Select the cell below 2.1 Add your service credentials for Object Storage sectio
 
 
 ### 2.7 Train model
-Run the notebook until section <TODO> by clicking on the `run` button in Jupyter notebook menubar
+Run the notebook until section *4.3 Train the Model* by clicking on the `run` button in Jupyter notebook menubar
 
-Depending on the dataset, the training of the model takes about one hour. When all the cells in the notebook have run without any errors, we have our machine learning model trained. The trained model also classifies test images. It will point out to the test image that was of the type `Document` (application form document)
-
-![](images/form_document_identified.png)
-
-This notebook was able to identify the form document from a set of application documents.
+Depending on the dataset, the training of the model takes about one hour. When all the cells, until section *4.3 Train the Model* in the notebook have run without any errors, we have our machine learning model trained.
 
 
 ## 3. Testing image classification machine learning model
@@ -174,7 +170,12 @@ Select the cell in Section 4.4
 ![](images/add_file_imageclassification_testing.png)
 
 ![](images/test_streaming_object.png)
---------
+
+The trained model classifies test images. It will point out to the test image that was of the type `Document` (application form document)
+
+![](images/form_document_identified.png)
+
+This notebook was able to identify the form document from a set of application documents.
 
 ## 5. Analyze the Results
 
