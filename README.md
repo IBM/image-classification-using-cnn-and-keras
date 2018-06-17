@@ -156,7 +156,7 @@ This notebook was able to identify the form document from a set of application d
 
 ### 3.1 Prepare data
 
-Once the model is trained, it is ready to classify images. Place all images that need to be classified have to be in a folder. Compress the folder. It's named as `testdoc-external.zip` in this code pattern. You can supply your own set of images for classification or use the one provided in this code pattern.
+Once the model is trained, it is ready to classify images. Place all images that need to be classified have to be in a folder. Compress the folder. It's named as `testdoc-external.zip` in this code pattern. You can supply your own set of images for classification or use the one provided in this code pattern. If you are using your own dataset, then update the zip file name occurrence in the notebook.
 
 If you are using a mac machine then compression creates some additional files which should be deleted. On command prompt, go to the compressed file location and run the following commands. Replace file name if you are using a different file name.
 ```
@@ -164,10 +164,7 @@ If you are using a mac machine then compression creates some additional files wh
 * zip -d test_doc-external.zip \\\*/.DS_Store
 ```
 
-
----------
 Select the cell in Section 4.4
-
 * Delete the contents of the cell
 * Use `Find and Add Data` (look for the 10/01 icon) and its Files tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below 2.2 Add...
 * Under Files, click the dropdown for `Insert to code` for `test_doc-external.zip`
@@ -181,8 +178,9 @@ Select the cell in Section 4.4
 
 ## 5. Analyze the Results
 
-This pattern aims to automate the identification of legal form document from other such documents and further extract useful information to classify the kind of legal form document it is.
+This pattern aims to automate the identification of legal form document from other such documents
 
-1. First, we ran the notebook `Image Classification of Documnet.ipynb`. Here we created and trained an image classification machine learning model. We then provided the model with a set of images for it to classify. The model classified the images and marked the application for documents in the set of input images by providing it's path. e.g. `test_doc-external/Form1 copy 2.jpg`
-2. As a second step we ran the second notebook `conv_img_to_txt.ipynb` while providing the application form document identified by first notebook. Here we converted image to text using tesseract and uploaded the file to Object storage
-3. As a final step we ran the notebook `Entity Extraction and Document Classification.ipynb`. This notebook used a couple of configuration files and identified required information from the text extracted in the second step above. It used Watson NLU and custom configuration to understand what information to identify based on what type of document is the text document. like, if the text is a purchase agreement, then it identifies a particular set of entities related to purchase agreement.
+1. We created dataset or used the dataset provided in with this code pattern. This training data is uploaded to Cloud Object Storage
+2. We created a machine learning model which gets trained on images (documents) dataset
+3. We provided a set of images for classification by uploading them to Cloud Object Storage
+4. Images provided were classified
