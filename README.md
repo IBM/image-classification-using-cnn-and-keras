@@ -1,8 +1,4 @@
 # Image Classification Using CNN and Keras
-**WORK IN PROGRESS**: This code pattern showcases capability of classifying images, specifically document images like ID cards, application forms, cheque leaf, using CNN in Keras libraries.
-
-
-# Image Recognition and Information Extraction from Image Documents using Keras and Watson NLU  
 
 This code pattern demonstrates how images, specifically document images like id cards, application forms, cheque leaf, can be classified using Convolutional Neural Network (CNN). Even though there are code patterns for image classification, none of them showcase how to use CNN to classify images using Keras libraries.
 
