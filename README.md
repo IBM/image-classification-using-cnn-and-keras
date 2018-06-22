@@ -25,6 +25,11 @@ In this code pattern, we have considered applications for `Purchase Agreement` a
 We will use Python, Jupyter notebook, CNN in Keras libraries and IBM Cloud Object Storage
 
 
+# Watch the Overview Video
+
+[![](https://i.ytimg.com/vi/NiBCa3EtCr0/3.jpg)](https://youtu.be/NiBCa3EtCr0)
+
+
 ## Flow
 ![WKSCreateProject](images/Architecture.png)
 1. User uploads test images to IBM Cloud Storage.
