@@ -87,10 +87,10 @@ If you are using a mac machine then compression creates some additional files wh
 ```
 
 
-### 2.4 Create Object Storage service instance
+### 2.2 Create Object Storage service instance
 [Create an Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage), if you do not have an instance created earlier.
 
-### 2.4 Create notebook
+### 2.3 Create notebook
 
 A [notebook](https://datascience.ibm.com/docs/content/analyze-data/notebooks-parent.html) in Watson Studio is a web-based environment for interactive computing. You can run small pieces of code that process your data, and you can immediately view the results of your computation.
 
@@ -107,7 +107,7 @@ Login to [IBM Cloud Dashboard](http://console.bluemix.net/). Click on the Watson
 
 ![](images/create_notebook_from_url_imageclassification.png)
 
-### 2.5 Add data files
+### 2.4 Add data files
 
 * Add `Data.zip` file, created/downloaded in [this section](#21-data-preparation), to Object Storage. In Watson Studio, go to your project default page, use `Find and Add Data` (look for the 10/01 icon) and its `Files` tab
 * Click browse and upload `Data.zip` file
@@ -128,7 +128,7 @@ Enter the desired batch_sizes for your training, validation and testing datasets
 `interested_folder='Documents'` is used to specify which class is to be treated as application forms class, so that it points out images that belong to this class.
 
 
-### 2.6 Update notebook with service credentials
+### 2.5 Update notebook with service credentials
 
 Add the Object Storage credentials to the notebook
 
@@ -143,7 +143,7 @@ Select the cell below 2.1 Add your service credentials for Object Storage sectio
 ![](images/Data_Streaming_Object.png)
 
 
-### 2.7 Train model
+### 2.6 Train model
 Run the notebook until section *4.3 Train the Model* by clicking on the `run` button in Jupyter notebook menubar
 
 Depending on the dataset, the training of the model takes about one hour. When all the cells, until section *4.3 Train the Model* in the notebook have run without any errors, we have our machine learning model trained.
@@ -178,11 +178,31 @@ The trained model classifies test images. It will point out to the test image th
 
 This notebook was able to identify the form document from a set of application documents.
 
-## 5. Analyze the Results
+## 4. Analyze the Results
 
-This pattern aims to automate the identification of legal form document from other such documents
+This pattern aims to automate the identification of images belonging to different types or classes
 
-1. We created dataset or used the dataset provided in with this code pattern. This training data is uploaded to Cloud Object Storage
-2. We created a machine learning model which gets trained on images (documents) dataset
-3. We provided a set of images for classification by uploading them to Cloud Object Storage
-4. Images provided were classified
+1. We considered a set of images for application form documents. Images belonged to different classes such as passport, driving license, cheque leaf, application form and pancard.
+![](images/classes.png)
+2. We created a image classification machine learning model using the dataset created.
+3. We provided a set of images, belonging to all classes, to be classified.
+4. For each of the images the notebook ran predictions and probability of each of them belonging to different classes were listed.
+![](images/probability.png)
+5. Of all the images provided the notebook pointed out the application form image, of `Documents` class.
+![](images/form_document_identified.png)
+
+
+# Links
+* [Demo on youtube](https://youtu.be/ZKsIIKYDXUw)
+* [Watson Studio](https://www.ibm.com/cloud/watson-studio)
+* [Object Storage](https://www.ibm.com/cloud/object-storage)
+
+# Learn more
+
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
+* **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
+
+# License
+
+[Apache 2.0](LICENSE)
