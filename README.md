@@ -54,8 +54,9 @@ We will use Python, Jupyter notebook, CNN in Keras libraries and IBM Cloud Objec
 # Steps
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
 1. [Sign up for IBM Watson Studio](#1-sign-up-for-ibm-watson-studio)
-2. [Classification of image Documents](#2-classification-of-image-documents)
-5. [Analyze the Results](#5-analyze-the-results)
+2. [Building Machine Learning Model](#2-building-machine-learning-model)
+3. [Testing image classification machine learning model](#3-testing-image-classification-machine-learning-model)
+4. [Analyze the Results](#4-analyze-the-results)
 
 
 ## 1. Sign up for IBM Watson Studio
@@ -68,7 +69,6 @@ If you have not already signed up for Watson Studio then you can sign up [here](
 ### 2.1 Data preparation
 
 Training a machine learning model requires a large number of documents and variety in them. While we have trained and tested the methodology followed in this code pattern, which has given good accuracy (>85%) with a large dataset, we cannot provide those images since they are not publicly available images. For the sake of executing this code pattern and understanding the methodology we have provided our personal documents and masked personal information on those documents. Please note that multiple copies, with resolution and color changes, of same kind of documents are provided. It is recommended that the user create their own set of images and use them in this code pattern so that they can appreciate the real value of this code pattern.
-<TODO prepare dataset with some tilted images and test>
 To create your own dataset, follow the following naming structure for each type of image -
 
 ![](images/Dir_structure-1.png)
@@ -101,7 +101,7 @@ Login to [IBM Cloud Dashboard](http://console.bluemix.net/). Click on the Watson
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
-* Enter this Notebook URL: https://github.com/IBM/image-recognition-and-information-extraction-from-image-documents/blob/master/notebooks/Image%20Classification%20of%20Documents.ipynb<TODO update this URL>
+* Enter this Notebook URL: https://github.com/IBM/image-classification-using-cnn-and-keras/blob/master/notebooks/Image%20Classification%20of%20Documents.ipynb
 * Under Runtime select Default Python with 4 CPU and 16GB RAM
 * Click the `Create` button.
 
@@ -183,14 +183,20 @@ This notebook was able to identify the form document from a set of application d
 This pattern aims to automate the identification of images belonging to different types or classes
 
 1. We considered a set of images for application form documents. Images belonged to different classes such as passport, driving license, cheque leaf, application form and pancard.
-![](images/classes.png)
-2. We created a image classification machine learning model using the dataset created.
-3. We provided a set of images, belonging to all classes, to be classified.
-4. For each of the images the notebook ran predictions and probability of each of them belonging to different classes were listed.
-![](images/probability.png)
-5. Of all the images provided the notebook pointed out the application form image, of `Documents` class.
-![](images/form_document_identified.png)
 
+   ![](images/classes.png)
+
+2. We created a image classification machine learning model using the dataset created.
+
+3. We provided a set of images, belonging to all classes, to be classified.
+
+4. For each of the images the notebook ran predictions and probability of each of them belonging to different classes were listed.
+
+   ![](images/probability.png)
+
+5. Of all the images provided the notebook pointed out the application form image, of `Documents` class.
+
+   ![](images/form_document_identified.png)
 
 # Links
 * [Demo on youtube](https://youtu.be/ZKsIIKYDXUw)
