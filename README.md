@@ -69,7 +69,6 @@ If you have not already signed up for Watson Studio then you can sign up [here](
 ### 2.1 Data preparation
 
 Training a machine learning model requires a large number of documents and variety in them. While we have trained and tested the methodology followed in this code pattern, which has given good accuracy (>85%) with a large dataset, we cannot provide those images since they are not publicly available images. For the sake of executing this code pattern and understanding the methodology we have provided our personal documents and masked personal information on those documents. Please note that multiple copies, with resolution and color changes, of same kind of documents are provided. It is recommended that the user create their own set of images and use them in this code pattern so that they can appreciate the real value of this code pattern.
-<TODO prepare dataset with some tilted images and test>
 To create your own dataset, follow the following naming structure for each type of image -
 
 ![](images/Dir_structure-1.png)
@@ -102,7 +101,7 @@ Login to [IBM Cloud Dashboard](http://console.bluemix.net/). Click on the Watson
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
-* Enter this Notebook URL: https://github.com/IBM/image-recognition-and-information-extraction-from-image-documents/blob/master/notebooks/Image%20Classification%20of%20Documents.ipynb<TODO update this URL>
+* Enter this Notebook URL: https://github.com/IBM/image-classification-using-cnn-and-keras/blob/master/notebooks/Image%20Classification%20of%20Documents.ipynb
 * Under Runtime select Default Python with 4 CPU and 16GB RAM
 * Click the `Create` button.
 
