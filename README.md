@@ -54,8 +54,9 @@ We will use Python, Jupyter notebook, CNN in Keras libraries and IBM Cloud Objec
 # Steps
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
 1. [Sign up for IBM Watson Studio](#1-sign-up-for-ibm-watson-studio)
-2. [Classification of image Documents](#2-classification-of-image-documents)
-5. [Analyze the Results](#5-analyze-the-results)
+2. [Building Machine Learning Model](#2-building-machine-learning-model)
+3. [Testing image classification machine learning model](#3-testing-image-classification-machine-learning-model)
+4. [Analyze the Results](#4-analyze-the-results)
 
 
 ## 1. Sign up for IBM Watson Studio
