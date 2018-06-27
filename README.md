@@ -187,7 +187,9 @@ This pattern aims to automate the identification of images belonging to differen
    ![](images/classes.png)
 
 2. We created a image classification machine learning model using the dataset created.
+
 3. We provided a set of images, belonging to all classes, to be classified.
+
 4. For each of the images the notebook ran predictions and probability of each of them belonging to different classes were listed.
 
    ![](images/probability.png)
@@ -195,7 +197,6 @@ This pattern aims to automate the identification of images belonging to differen
 5. Of all the images provided the notebook pointed out the application form image, of `Documents` class.
 
    ![](images/form_document_identified.png)
-
 
 # Links
 * [Demo on youtube](https://youtu.be/ZKsIIKYDXUw)
