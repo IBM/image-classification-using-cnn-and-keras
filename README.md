@@ -184,19 +184,13 @@ This pattern aims to automate the identification of images belonging to differen
 
 1. We considered a set of images for application form documents. Images belonged to different classes such as passport, driving license, cheque leaf, application form and pancard.
 
-   ![](images/classes.png)
-
+![](images/classes.png)
 2. We created a image classification machine learning model using the dataset created.
-
 3. We provided a set of images, belonging to all classes, to be classified.
-
 4. For each of the images the notebook ran predictions and probability of each of them belonging to different classes were listed.
-
-   ![](images/probability.png)
-
+![](images/probability.png)
 5. Of all the images provided the notebook pointed out the application form image, of `Documents` class.
-
-   ![](images/form_document_identified.png)
+![](images/form_document_identified.png)
 
 # Links
 * [Demo on youtube](https://youtu.be/ZKsIIKYDXUw)
