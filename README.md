@@ -183,7 +183,6 @@ This notebook was able to identify the form document from a set of application d
 This pattern aims to automate the identification of images belonging to different types or classes
 
 1. We considered a set of images for application form documents. Images belonged to different classes such as passport, driving license, cheque leaf, application form and pancard.
-
 ![](images/classes.png)
 2. We created a image classification machine learning model using the dataset created.
 3. We provided a set of images, belonging to all classes, to be classified.
