@@ -184,6 +184,7 @@ This pattern aims to automate the identification of images belonging to differen
 
 1. We considered a set of images for application form documents. Images belonged to different classes such as passport, driving license, cheque leaf, application form and pancard.
 ![](images/classes.png)
+
 2. We created a image classification machine learning model using the dataset created.
 3. We provided a set of images, belonging to all classes, to be classified.
 4. For each of the images the notebook ran predictions and probability of each of them belonging to different classes were listed.
